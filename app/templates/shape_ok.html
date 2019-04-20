@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="static/css/simpleGridTemplate2.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+</style>
+<link href="static/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<script src="static/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo">基于手机相机的网点质量评测系统</h2>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <p><a href="upload_ok"><img src="static/images/xiangji.svg" alt="" width="36" height="34"/></a></p>
+      <p>网点形状</p>
+    </div>
+    <div class="column">
+      <p>请输入之前加网线数阶段中选择的坐标以圈出一个合适的网点判断网点形状：</p>
+    </div>
+  </section>
+  
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_lpi.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>选图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_lpi_find.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>调整图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_lpi_cut.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+     <h4>局部放大图</h4>
+    </div>
+    <p>&nbsp;</p>
+	<form action="" enctype='multipart/form-data' method='POST'>
+    <table align="center">
+    <tr>
+        <td height="5">左上角横坐标</td>
+        <td width="10" height="5"><input name="x1" type="text" id="x1" size="10"></td>
+        <td width="10" height="5">右下角横坐标</td>
+        <td width="10" height="5"><input name="x2" type="text" id="x2" size="10"></td>
+    <tr>
+        <td height="5">左上角纵坐标</td>
+        <td width="10" height="5"><input name="y1" type="text" id="y1" size="10"></td>
+        <td width="10" height="5">右下角纵坐标</td>
+        <td width="10" height="5"><input name="y2" type="text" id="y2" size="10"></td>
+    <tr>
+        <td width="10" height="5">是否选择</td>
+         <td width="10" height="5">
+           <p>
+             <label>
+               <input type="radio" name="ok" value="y" id="ok">
+               是</label>
+             <br>
+             <label>
+               <input type="radio" name="ok" value="n" id="ok">
+               否</label>
+             <br>
+           </p>
+         </td>
+        <td width="10" height="5">确定计算</td>
+        <td width="10" height="5"><input name="确定" type="submit" value="确定" class="button">      
+    </tr>
+    </table>
+	</form>
+  </div>
+
+<!-- Footer Section -->
+  <footer id="contact">
+<p class="logo">经判断，网点形状为： {{dot_shape}} </p>
+    <p class="logo"><a href="lpi">加网线数</a> &nbsp; &nbsp; &nbsp; <a href="angle">网目角度</a> &nbsp; &nbsp; &nbsp; <a href="percentage">网点百分比</a>&nbsp;</p>
+  </footer>
+<!-- Copyrights Section -->
+  <div class="copyright">&copy;成像技术第四小组:张思怡 刘佳 陈薇 侯嘉莉 李羽丹</div>
+</div>
+<!-- Main Container Ends -->
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
