@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="static/css/simpleGridTemplate1.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+</style>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 基于手机相机的网点质量评测系统</h2>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <p><a href="upload_ok"><img src="static/images/xiangji.svg" alt="" width="36" height="34"/></a></p>
+      <p>加网线数</p>
+    </div>
+    <div class="column">
+      <p>请选择您认为效果比较好的分色图进行网目线数的计算：</p>
+    </div>
+  </section>
+  
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_c_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <div class="submit">青色二值化结果图</div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_m_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+     <div class="submit">品色二值化结果图</div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_y_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+     <div class="submit">黄色二值化结果图</div>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_k_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+     <div class="submit">黑色二值化结果图</div>
+    </div>
+  </div>
+<!-- Footer Section -->
+  <footer id="contact">
+	<form action="" enctype='multipart/form-data' method='POST'>
+	 <p>
+      <label>
+        <input type="radio" name="color" value="c" id="color">
+        <strong>青</strong></label>
+	 <label>
+        <input type="radio" name="color" value="m" id="color">
+        <strong>品</strong></label>
+      <label>
+        <input type="radio" name="color" value="y" id="color">
+        <strong> 黄</strong></label>
+      <label>
+        <input type="radio" name="color" value="k" id="color">
+        <strong>黑</strong></label>
+     </p>
+        <input type="submit" value="确定" class="button">
+	</form>
+  </footer>
+<!-- Copyrights Section -->
+  <div class="copyright">&copy;成像技术第四小组:张思怡 刘佳 陈薇 侯嘉莉 李羽丹</div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
