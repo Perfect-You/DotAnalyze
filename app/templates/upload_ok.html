@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="static/css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo">基于手机相机的网点质量评测系统</h2>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <p><a href="upload"><img src="static/images/xiangji.svg" alt="" width="36" height="34"/></a></p>
+      <p><img src="{{ url_for('static', filename= './images/img.jpg',_t=val1) }}" width=40% height=40% alt=""/></p>
+    </div>
+    <div class="column">
+      <p>尊敬的客户：您好！欢迎使用本网站。为了给您带来更好的用户体验，请耐心阅读以下内容：1.请与本网站配套的放大镜联合使用。（购买链接）2.请按照指导步骤操作。</p>
+    </div>
+  </section>
+  
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"><a href="#"><img src="{{ url_for('static', filename= './images/img_cmyk.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>颜色空间转换结果图</h4>
+</div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_c.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>青色分色图</h4>
+</div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_m.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>品色分色图</h4>
+</div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_y.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>黄色分色图</h4>
+</div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_k.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>黑色分色图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_c_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>青色二值化结果图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_m_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>品色二值化结果图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_y_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>黄色二值化结果图</h4>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="{{ url_for('static', filename= './images/img_k_binary.jpg',_t=val1) }}" alt="" width="2000" class="cards"/></a>
+      <h4>黑色二值化结果图</h4>
+    </div>
+  </div>
+<!-- Footer Section -->
+  <footer id="contact">
+    <p class="logo">质量评测 </p>
+	<div class="button"><a href="lpi" style="text-decoration:none">加网线数 </a></div>
+	<div class="button"><a href="angle" style="text-decoration:none">网目角度</a></div>
+	<div class="button"><a href="shape" style="text-decoration:none">网点形状</a></div>
+	<div class="button"><a href="percentage" style="text-decoration:none">网点百分比</a></div>
+  </footer>
+<!-- Copyrights Section -->
+  <div class="copyright">&copy;成像技术第四小组:张思怡 刘佳 陈薇 侯嘉莉 李羽丹</div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
