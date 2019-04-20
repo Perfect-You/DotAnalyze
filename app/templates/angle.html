@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="static/css/simpleGridTemplate3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+</style>
+<link href="static/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<script src="static/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo">基于手机相机的网点质量评测系统</h2>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <p><a href="upload_ok"><img src="static/images/xiangji.svg" alt="" width="36" height="34"/></a></p>
+      <p>网目角度</p>
+    </div>
+    <div class="column">
+      <p>&nbsp;</p>
+      <p>请选择需要计算网目角度的颜色：</p>
+      <form action="" enctype='multipart/form-data' method='POST'>
+        <p>
+          <label>
+            <input type="radio" name="color" value="c" id="RadioGroup2_0">
+            青</label>
+          <label>
+            <input type="radio" name="color" value="m" id="RadioGroup2_1">
+            品</label>
+          <label>
+            <input type="radio" name="color" value="y" id="RadioGroup2_2">
+            黄</label>
+          <label>
+            <input type="radio" name="color" value="k" id="RadioGroup2_2">
+            黑</label>
+        </p>
+        <p>&nbsp;</p>
+        <p>请输入角度：
+          <label for="textfield"></label>
+          <input type="text" name="angle" id="textfield" size="10">
+        度        </p>
+        <p>
+          <input type="submit" name="确定" id="确定"  class="button">
+        </p>
+      </form>
+      <p>&nbsp;</p>
+      <p>tips:您需要自行输入一个角度值，如30，</p>
+      <p>点击提交则会在图中出现相应的参考线，您可根据网线与其的平行程度判断网目角度。</p>
+    </div>
+  </section>
+  
+  <!-- Stats Gallery Section -->
+   <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="static/images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>选图</h4>
+    </div>
+    <div class="gallery">
+    <p>&nbsp;</p>
+    </div>
+
+<!-- Footer Section -->
+  <footer id="contact">
+    <p class="logo">&nbsp;</p>
+  </footer>
+<!-- Copyrights Section -->
+  <div class="copyright">&copy;成像技术第四小组:张思怡 刘佳 陈薇 侯嘉莉 李羽丹</div>
+</div>
+<!-- Main Container Ends -->
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
